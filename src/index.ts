@@ -2,7 +2,7 @@ import {PatternStorage} from "./pattern.storage";
 
 export class PatternExecutor {
 
-    private static stor: {[key: string] : PatternStorage<any>}  = null;
+    private static stor: {[key: string] : PatternStorage<any>} = {};
 
     /**
      * Retrieve some storage which operates scoped data
