@@ -55,14 +55,14 @@ export class PatternExecutor {
 
             return {
                 pattern: left.split(scopeSeparator),
-                search: right
+                rest: right
             }
 
         }
 
         return {
             pattern: [],
-            search: s
+            rest: s
         }
 
     }
@@ -71,7 +71,7 @@ export class PatternExecutor {
 
 export interface ScopedString {
     pattern: string[];
-    search: string;
+    rest: string;
 }
 
 export interface ScopedRoute<T> {
